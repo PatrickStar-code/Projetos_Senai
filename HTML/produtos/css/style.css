@@ -1,0 +1,36 @@
+body{background-color: rgb(245, 245, 245);}
+
+span{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+
+.negrito{font-weight: bold;}
+.italico{font-style: italic;}
+.sublinhado{text-decoration: underline;}
+
+div.produto{
+	display: inline-block;
+	margin: 50px;
+	position: center;
+	background-color:gray;
+	border-radius: 25px;
+	border-color: black;
+	border-style: solid	;
+	padding: 10px;
+}
+
+div.sites{
+	display: inline-block;
+}
+
+.texto{font-size: 20px;margin: 5px padding:5px}
+
+
+
+
+li.foto{
+    margin: 20px;
+	list-style: none;
+	background-image: url("/img/Fundo.png");
+	background-repeat: no-repeat;
+	background-position: left;
+	background-size: 20px;
+}

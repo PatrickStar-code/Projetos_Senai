@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satisfação</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+ 
+    <section>
+    <center>
+    <div class="conteudo">
+    <center>
+    <form action="resultado.php" method="post"><img src="img/Pesquisa-de-satisfacao-removebg-preview.png" alt=""><h1>PESQUISA DE SATISFAÇÃO</h1>
+
+    <div class="alinhamento">
+    <label for="nome">Nome</label>
+    <input type="text" name="nome" id="nome">
+    
+    <label for="email">E-mail</label>
+    <input type="email" name="email" id="email"><br>
+    </div>
+
+    <div class="alinhamento">
+    <label for="curso">Curso</label>
+    <input list="curso">
+    <datalist id=curso>
+        <option value="Mecânica">
+        <option value="Mecatrônica">
+        <option value="Eletrônica">
+        <option value="Informatica">
+        <option value="Automação">
+    </datalist>
+
+    <label for="turno">Turno</label>
+    <select name="turno" id="turno">
+        <option value="Manha">Manha</option>
+        <option value="tarde">Tarde<option>
+    <select>
+
+    <label for="Conclusao">Conclusão</label>
+    <input type="date" name="conclusao" id="conclusao">
+    </div>
+
+    <p><span class="satisfacao">Qual o seu grau de satisfação com:</span></p>
+    
+    <center>
+    <div class="alinhamento">
+    <label for="satisfacao">Conteudo:</label>
+    <input type="radio" name="satisfacao" id="satisfacao">Pouco Satisfeito
+    <input type="radio" name="satisfacao" id="satisfacao">Satisfeito
+    <input type="radio" name="satisfacao" id="mt_satisfacao">Muito Satisfeito<br>
+    </div>
+
+    <div class="alinhamento">
+    <label for="material">Material:</label>
+    <input type="radio" name="material" id="satisfacao">Pouco Satisfeito
+    <input type="radio" name="material" id="satisfacao">Satisfeito
+    <input type="radio" name="material" id="mt_satisfacao">Muito Satisfeito<br>
+    </div>
+
+    <div class="alinhamento">
+    <label for="instalações">Instalações:</label>
+    <input type="radio" name="instalações" id="satisfacao">Pouco Satisfeito
+    <input type="radio" name="instalações" id="satisfacao">Satisfeito
+    <input type="radio" name="instalações" id="mt_satisfacao">Muito Satisfeito<br>
+   </div>
+
+   
+    <p class="comentario">Comentarios:</p><br>
+    <div class="alinhamento"></div>
+    <textarea name="Comentarios" id="comentarios" cols="30" rows="10"></textarea><br>
+    <div>
+
+    <input type="submit" value="Enviar" class="submit">
+    </center>
+    </div>
+    </center>
+</form>
+
+    </section>
+</body>
+</html>

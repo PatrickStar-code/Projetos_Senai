@@ -1,0 +1,23 @@
+body{background-image:url(/img/Fundo-Site.jpg);background-repeat: no-repeat;background-size: cover;}
+div{display: inline-block;padding: 20px;;background-color: black;margin: 20px;width: 300px;height: 520px;border-radius: 25px;}
+
+.titulo{font-size: 50px;font-family: 'Tiro Gurmukhi', serif;;}
+
+img{filter: grayscale(100%) blur(3px)}
+img:hover{filter: grayscale(0%);width: 99%;}
+button{margin-top: 5px;background-color: gray;border-radius: 100px;}
+
+
+/*
+div.foto1{background-image:url("/img/Foto1-pb.jpg") ;}
+div.foto1:hover{background-image: url("/img/Foto1-color.jpg");}
+
+div.foto2{background-image:url("/img/Foto2-pb.jpg") ;}
+div.foto2:hover{background-image: url("/img/Foto2-color.jpg");}
+
+div.foto3{background-image:url("/img/Foto3-pb.jpg") ;}
+div.foto3:hover{background-image: url("/img/Foto3-color.jpg");}
+
+div.foto4{background-image:url("/img/Foto4-pb.jpg") ;}
+div.foto4:hover{background-image: url("/img/Foto4-cplor.jpg");}*/
+

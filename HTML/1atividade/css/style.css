@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap');
+
+span.titulo{color: white;font-size: 50px;font-family: 'Kdam Thmor Pro', sans-serif;}
+span.home{margin: 20px;;display: inline-block;margin-top: -1;color: white;font-family: 'Bebas Neue', cursive;font-size: 35px;}
+.fundo1{background-color: black;}
+.subtitulo{color: white;font-size: 25px;margin-top: -20px;font-family: 'Mulish', sans-serif;}
+.textproduto{color: white;font-size: 20px;}
+.preco{font-size: 40px;color:rgb(255, 6, 6);}
+.sobre{font-size: 25px;background-color: gray;margin:20px}
+div.fundoprod{background-color: gray; width: 530px;padding: 50px;font-size: 30px;}
+.descricao{font-size: 20px;}
+div.textosobre{font-family: 'Kdam Thmor Pro', sans-serif;background-color: gray;;border-radius: 5%;padding: 20px;padding-top: 20px;padding-bottom: 20px;font-size: 50px;}
+
+div.produto{display: inline-block;background-color: gray;width: 210px;border-radius: 25px;padding: 20px;margin:40px;}
+

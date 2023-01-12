@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <p id="lorem1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quam in nesciunt libero velit et eos earum minima unde, repudiandae tenetur iusto eveniet eaque, modi ut, dicta quaerat porro officia.</p>
+    <p id="lorem2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quam in nesciunt libero velit et eos earum minima unde, repudiandae tenetur iusto eveniet eaque, modi ut, dicta quaerat porro officia.</p>
+    <p id="lorem3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quam in nesciunt libero velit et eos earum minima unde, repudiandae tenetur iusto eveniet eaque, modi ut, dicta quaerat porro officia.</p>
+    
+    <button type="button"  onclick="mudacor('lorem1',document.getElementById('cor_sel').value)" >P1</button>
+    <button type="button"  onclick="mudacor('lorem2',document.getElementById('cor_sel').value)">P2</button>
+    <button type="button"  onclick="mudacor('lorem3  ',document.getElementById('cor_sel').value)">P3</button>
+
+    <input type="color" name="cor_sel" id="cor_sel">
+
+    <button type="button" onclick="mudacor(document.getElementById('cor_sel').value)">Mudar Cor</button><br>
+    <input type="text" name="v1" id="v1">
+    <input type="text" name="v2" id="v2">
+    <input type="text" name="v3" id="v3">
+    <button type="button" onclick="sum()">Soma</button>
+
+    <p>Resultado: <span id="resultado"></span></p>
+    
+    <div class="maior">
+        <div class="box" id="d1" onclick="mudacor('d1',(document.getElementById('box_c').value))"></div>
+        <div class="box" id="d2" onclick="mudacor('d2',(document.getElementById('box_c').value))"></div>
+        <div class="box" id="d3" onclick="mudacor('d3',(document.getElementById('box_c').value))"></div>
+        <div class="box" id="d4" onclick="mudacor('d4',(document.getElementById('box_c').value))"></div>
+    </div>
+    <label for="Cor_box">Escolha uma cor:</label>
+    <input type="color" name="box_c" id="box_c">
+
+    <div class="maior">
+        <div class="box" id="d5" onclick="mudacor('d5',gerarcor())"></div>
+        <div class="box" id="d6" onclick="mudacor('d6',gerarcor())"></div>
+        <div class="box" id="d7" onclick="mudacor('d7',gerarcor())"></div>
+        <div class="box" id="d8" onclick="mudacor('d8',gerarcor())"></div>
+    </div>
+
+    <button type="button" id="Default" onclick="mudacor('d5','red')">Default Q1</button>
+    <button type="button" id="Default" onclick="mudacor('d6','red')">Default Q2</button>
+    <button type="button" id="Default" onclick="mudacor('d7','red')">Default Q3</button>
+    <button type="button" id="Default" onclick="mudacor('d8','red')">Default Q4</button>
+    
+    
+    
+    <script src="/script.js"></script>
+
+
+</body>
+</html>

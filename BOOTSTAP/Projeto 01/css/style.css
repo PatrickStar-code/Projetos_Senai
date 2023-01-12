@@ -1,0 +1,10 @@
+div.col{
+    background-color: aqua;
+    border-style: solid;
+
+}
+
+.icon{
+    position: relative;
+    bottom: -0px;
+}

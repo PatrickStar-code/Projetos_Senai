@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <center>
+    <section class="form">
+        <h1>SEÇÃO DE LOGIN</h1>
+        
+        <div id="containerForm">
+        <form action="processa.php" method="post">
+         
+            <label for="NOME">NOME</label>
+            <input type="text" name="nome" id="NOME"  class="input"><br>
+            
+            <label for="SENHA">SENHA</label>
+            <input type="password" name="senha" id="SENHA" class="input"><br>
+
+            
+            <label for="GENERO" class="input">GENERO:</label>
+            <input type="radio" name="genero" id="GENERO"><span>MASCULINO</span>
+            <input type="radio" name="genero" id="GENERO"><span>FEMININO<span><br>
+
+            <label for="ESPORTE">ESPORTE PRATICADO:</label><br>
+            <input type="checkbox" name="esporte" id="ESPORTE">FUTEBOOL
+            <input type="checkbox" name="esporte" id="ESPORTE">VOLEI
+            <input type="checkbox" name="esporte" id="ESPORTE">BASQUETE
+            <input type="checkbox" name="esporte" id="ESPORTE">TENIS<br>
+
+              
+            
+            <input type="submit" value="SUBMIT" class="submit">
+        </form>
+        </div>>
+
+    </section>
+</center>
+</body>
+</html>

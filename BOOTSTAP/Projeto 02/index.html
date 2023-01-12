@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IMC</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    
+    <div class="container-fluid">
+        <!-- TITULO -->
+        <div class="row">
+            <div class="col-12 col-xl-12" style="text-align: center;padding: 15px;">
+                <img src="/img/corpo-imc.jpg" alt="" style="width: 30%;">
+                <h1>Calculando IMC</h1>
+            </div>
+        </div>
+        <!-- FORMULARIO -->
+        <div class="row">
+            <div class="col-6 col-xl-6 col-lg-6">
+                <form>
+                    <div class="form-group" style="padding: 5px;">
+                        <div class="input-group">
+                            <input type="number" class="form-control" id="Peso" aria-describedby="Peso"
+                                placeholder="Digite seu Peso" required>
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">KG</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group" style="padding: 5px;">
+                        <div class="input-group">
+                            <input type="number" class="form-control" id="Altura" placeholder="Digite sua Altura"
+                                required>
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">M</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop" onclick="calcular()" >
+                        ENVIAR
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="staticBackdropLabel">Seu IMC</h5>
+                                   
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body" >
+                                    <p id="resposta"></p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!-- IMAGEM EXTRA -->
+            <div class="col-6 col-lg-6 col-xl-6">
+                <img src="/img/1000_F_206230331_GwxEYQH1t1jYms2fG3fzVp8Y1CiEG9BN.jpg" alt="" width="100%">
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+        crossorigin="anonymous"></script>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

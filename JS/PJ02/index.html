@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/Java/main.js">
+</head>
+
+<body>
+    <h1>Mini Editor de Textos</h1>
+    <div class="text" id="text">
+        <spam id="texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus perferendis voluptas soluta
+            quidem fugiat, voluptates aperiam accusamus odio officiis repellat ratione quis ab, ad, laborum at
+            reprehenderit neque saepe velit.</spam>
+    </div>
+    >
+    <h2>Escoha as Opções de formatação</h2>
+    <label for="cor_fonte" id="cor_fonte">Cor da Fonte:</label>
+    <select name="cor_fonte" id="cor_fonte_sel">
+        <option value="blue">Azul</option>
+        <option value="red">Vermelho</option>
+        <option value="green">Verde</option>
+        <option value="black">Preto</option>
+    </select>
+
+    <label for="tm_fonte" id="tm_fonte">Tamanho Fonte:</label>
+    <select name="tm_fonte" id="tm_fonte_sel">
+        <option value="10px">10px</option>
+        <option value="14px">14px</option>
+        <option value="20px">20px</option>
+        <option value="30px">30px</option>
+    </select>
+
+    <label for="alinhamento" id="alinhamento">Alinhamento:</label>
+    <select name="alinhamento" id="alinhamento_sel">
+        <option value="left">Esquerda</option>
+        <option value="right">Direita</option>
+        <option value="center">Centralizado</option>
+        <option value="justify">Justificado</option>
+    </select><br>
+
+
+    <button onclick="formatar()">Formatar</button>
+    <button onclick="Desfazer()">Desfazer</button>
+
+
+    <script>
+
+        var Cor_Arm;
+        var Tamanho_Arm;
+        var alinhamento_Arm;
+
+        function formatar() {
+
+            var Cor_Sel = document.getElementById("cor_fonte_sel").value;
+            document.getElementById('texto').style.color = Cor_Sel;
+
+            var Tamanho_Sel = document.getElementById('tm_fonte_sel').value;
+            document.getElementById('texto').style.fontSize = Tamanho_Sel;
+
+            var alinhamento_sel = document.getElementById('alinhamento_sel').value;
+            document.getElementById('text').style.textAlign = alinhamento_sel;
+
+            Cor_Arm = document.getElementById("cor_fonte_sel").value
+            Tamanho_Arm = document.getElementById('tm_fonte_sel').value
+            alinhamento_Arm = document.getElementById('alinhamento_sel').value
+
+        }
+
+
+        function Desfazer() {
+
+            document.getElementById('texto').style.color = Cor_Arm;
+            document.getElementById('texto').style.fontSize = Tamanho_Arm;
+            document.getElementById('text').style.textAlign = alinhamento_Arm;
+
+            console.log(Cor_Arm)
+
+        }
+
+    </script>
+
+
+
+</body>
+
+</html>

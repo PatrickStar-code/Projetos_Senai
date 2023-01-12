@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Inicial</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="/img/ic_directions_bus_128_28256.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="/img/logo-removebg-preview.png" alt="Logo" class="logo">
+            <div class="menu">
+                <ul class="list">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/passagens.html">Passagens</a></li>
+                    <li><a href="/carrinho.html"><img src="/img/shoppingcartfull_compras_carr_13340.png" alt="Cart" class="kart"></a>
+                    </li>
+                    <li><a href="#"><img src="/img/account_avatar_face_man_people_profile_user_icon_123197.png"
+                                alt="logar" class="usuario"></a></li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+    <section>
+        <center>
+            <nav class="pesquisa">
+                <div class="onde_desejair">
+                    <center>
+                        <form action="pesquisa.php" method="get"><span class="pesquisa_text">Marque sua
+                                viagem!</span><br>
+                    </center>
+                    <label for="de_onde_vc_é"><span class="letra_label_viagem">De:</span></label>
+                    <input type="text" name="de_onde_vc_é">
+                    <label for="ida"><span class="letra_label_viagem">Para:</span></label>
+                    <input type="text" name="ida">
+                    <label for="data"><span class="letra_label_viagem">Quando deseja viajar:</span></label>
+                    <input type="date" name="data" id="data">
+                    <label for="hora"><span class="letra_label_viagem">Qual hora deseja viajar:</span></label>
+                    <input type="time" name="hora" id="hora">
+                    <button type="submit" class="submiter"><img src="/img/lupa.png" alt="pesquisa"
+                            class="submiter"></button>
+                    </form>
+                </div>
+            </nav>
+        </center>
+        <center>
+            <h1 class="text_img_inicio">Viaje Conosco!</h1>
+            <div class="cards">
+                <div class="card"><img src="/img/img_inicio.png" alt="Rio de janeiro" class="img_inicio"></div>
+            </div>
+        </center>
+
+        <div class="inferior">
+            <div class="cards">
+                <div class="card"><img src="/img/box1.jpeg" alt="box-1" class="box1"></div>
+            </div>
+
+            <div class="cards">
+                <div class="bloco">
+                    <h2 class="viagem">Rio de Janeiro,RJ<br>Para <br>Belo Horizonte,MG</h2>
+                    <p class="price">R$ 160.00</p>
+                    <a href="/passagens.html" class="redirecionamento">Compre Já</a><br>
+
+                    <h2 class="viagem2">Campinas,SP<br>Para <br>Curitiba,PR</h2>
+                    <p class="price">R$ 190.00</p>
+                    <a href="/passagens.html" class="redirecionamento">Compre Já</a><br>
+
+                    <h2 class="viagem3">Curitiba,PR<br>Para <br>Campinas,SP</h2>
+                    <p class="price">R$ 170.00</p>
+                    <a href="/passagens.html" class="redirecionamento">Compre Já</a>
+
+                </div>
+            </div>
+        </div>
+        <center>
+            <div class="cards">
+                <div class="card"><img src="/img/10-motivos-para-contratar-uma-agência-de-viagensEMO.png" alt=""
+                        class="img_vantagens"></div>
+            </div>
+        </center>
+    </section>
+    <footer>
+        <span class="footer_text_pag">FORMAS DE PAGAMENTO:</span><br>
+        <div class="flex">
+            <center>
+            <div class="footer">
+                <span class="footer_text"> Cartões de Credito</span> <br>
+                <div class="posicao1">
+                    <center>
+                        <img src="/img/bandeiras.png" alt="" class="bandeiras">
+                    </center>
+                </div>
+                
+                <center>
+                <span class="footer_text">Pix</span>
+                <div class="posicao2">
+                    <center>
+                        <img src="/img/logo-pix-icone-256-removebg-preview.png" alt="" class="pix">
+                    </center>
+                </div>
+            </center>
+                
+            </div>
+        </center>
+        </div>
+    </footer>
+
+</body>
+
+</html>

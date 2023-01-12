@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check-Out</title>
+    <link rel="stylesheet" href="css/checkout.css">
+    <link rel="shortcut icon" href="/img/ic_directions_bus_128_28256.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="/img/logo-removebg-preview.png" alt="Logo" class="logo">
+            <div class="menu">
+                <ul class="list">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/passagens.html">Passagens</a></li>
+                    <li><a href="/carrinho.html"><img src="/img/shoppingcartfull_compras_carr_13340.png" alt="Cart" class="kart"></a>
+                    </li>
+                    <li><a href="#"><img src="/img/account_avatar_face_man_people_profile_user_icon_123197.png"
+                                alt="logar" class="usuario"></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <center>
+            <form action="teste.php" method="post">
+                <div class="fundo">
+                    <span class="titulo">Passageiro</span><br><br>
+                    <span class=""></span>
+                    <span class="nome">
+                        <label for="nome">Nome Completo</label><br>
+                        <input type="text" id="nome" required><br>
+                    </span>
+
+                    <span class="documento">
+                        <label class="doc" for="nome">Documento</label><br>
+                        <select name="documento" id="documento">
+                            <option value="cpf">CPF</option>
+                            <option value="rg">RG</option>
+                            <option value="cnh">CNH</option>
+                            <option value="passaporte">Passaporte</option>
+                            <input type="text" id="nome" required>
+                        </select><br>
+                    </span><br>
+
+                    <span class="titulo1">Contato</span><br><br>
+
+                    <span class="email">
+                        <label for="email">E-Mail</label><br>
+                        <input type="text" id="email" required><br>
+                    </span>
+
+                    <span class="docu"><br>
+                        <label class="docu" for="nome">Documento</label><br>
+                        <select name="documento" id="documento">
+                            <option value="cpf">CPF</option>
+                            <option value="passaporte">Passaporte</option>
+                            <input type="text" id="nome" required>
+                        </select><br>
+                    </span>
+
+                    <span class="tel">
+                        <label for="tel">Telefone</label><br>
+                        <input type="text" id="tel" placeholder="(xx)xxxx-xxxx" required>
+                    </span><br>
+
+                    <div class="tipos">
+                        <label for="parcela">Escolha a Forma de Pagamento</label><br>
+                            <select name="parcela" id="parcela">
+                                <option value="master">Master Card</option>
+                                <option value="pix">Pix</option>
+                                <option value="boleto">Boleto</option>
+                                <option value="bradesco">Bradesco</option>
+                                <option value="visa">Visa</option>
+                                <option value="elo">Elo</option>
+                                <option value="american">American Express</option>
+                            </select>
+                            <img class="paga" src="/img/logo pagamento.jpg" alt="">
+                    </div>
+
+                    <!-- PAGAMENTO -->
+                    <span class="titulo2">Pagamento</span><br><br>
+                    <div class="pagamentos">
+                        <span class="numero_cart">
+                            <label for="numero">Número do Cartão</label><br>
+                            <input type="number" id="numero" placeholder="xxxx xxxx xxxx xxxx" required>
+                        </span><br><br>
+
+                        <span class="val_cart">
+                            <label for="" id="val_cart">Validade do Cartão</label><br>
+                            <input type="date" required>
+                        </span>
+
+                        <span class="cod_seg">
+                            <label for="cod">Código de Segurança(CVV)</label><br>
+                            <input type="number" placeholder="xxx" required>
+                        </span><br><br>
+
+                        <span class="titular">
+                            <label for="">Nome do Titular do Cartão</label><br>
+                            <input type="text" required><br>
+                        </span><br><br>
+
+                        <span class="cpf_titu">
+                            <label for="cpf_titu">CPF/CNPJ do Titular</label><br>
+                            <input type="text" placeholder="xxx.xxx.xxx-xx" required>
+                        </span>
+
+                        <span class="cep">
+                            <label for="cep">CEP da Fatura do Cartão</label><br>
+                            <input type="text" placeholder="xxxxx-xxx" required>
+                        </span><br><br>
+
+                        <span class="parcela">
+                            <label for="parcela">Em Quantas Parcelas?</label><br>
+                            <select name="parcela" id="parcela">
+                                <option value="1">1x</option>
+                                <option value="2">2x</option>
+                                <option value="3">3x</option>
+                                <option value="4">4x</option>
+                                <option value="5">5x</option>
+                                <option value="6">6x</option>
+                                <option value="7">7x</option>
+                                <option value="8">8x</option>
+                                <option value="9">9x</option>
+                                <option value="10">10x</option>
+                                <option value="11">11x</option>
+                                <option value="12">12x</option>
+                            </select>
+                        </span><br><br>
+
+                        <span class="botao"><input type="submit" value="COMPRAR"></span><br>
+                    </div>
+
+
+                    <!-- DETALHES -->
+                    <div class="resumo">
+                        <span class="titulo3">Resumo do Pedido</span><br>
+                        <img src="/img/belo_horizonte_0514203039.jpg" alt=""><br>
+                        <span class="descri">Belo Horizonte, MG - Terminal JK -> Rio de Janeiro, RJ - Metro Sao
+                            Cristovao</span><br>
+                        <span class="desc">Operado por Util</span>
+                        <span class="tudo">
+                            <span class="hora"> Viagem de ida: Ter..05 de Julho ás 10:20</span>
+                            <span class="partida">Partindo de: Belo Horizonte,MG-Terminal JK</span>
+                            <span class="com">Companhia:Util</span>
+                            <span class="classe">Classe: Leito</span><br><br><br><br>
+                            <span class="assento">1 assento</span>
+                            <span class="p_assento">R$ 120,00</span>
+                            <span class="taxa">Taxa de Serviço</span>
+                            <span class="p_taxa">R$ 20,00</span>
+                        </span>
+
+                        <footer>
+
+                            <span class="valor">Valor à vista</span>
+                            <span class="preco">R$ 140,00</span>
+
+                        </footer>
+                    </div>
+
+
+            </form>
+            </div>
+        </center>
+
+
+
+
+
+
+    </section>
+</body>
+
+</html>

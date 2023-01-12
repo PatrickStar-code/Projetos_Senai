@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <h1>Javascript</h1>
+    <button type="button" onclick="document.getElementById('demo').innerHTML = ('Bem-Vindo')">Click me!</button>
+    <button type="button" onclick="document.getElementById('demo').innerHTML = ''" >Limpa-tela</button>
+
+    <p id="demo"></p>
+
+
+    <h2>Cores
+        <button type="button" onclick="document.getElementById('box').style.display = 'none' ">Ocultar</button>
+        <button type="button" onclick="document.getElementById('box').style.display = 'block' " >Exibir</button>
+        <button type="button" onclick="document.getElementById('box').remove()">Remover</button>
+    </h2>
+
+    <div class="box" id="box"> 
+        <span id="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat quisquam labore ullam ratione laborum! Neque id, assumenda mollitia qui ipsamexercitationem! Nesciunt, eos? Itaque, facere ipsum. Dolores porro laboriosam minima.<span>
+    </div>
+    <h3>Cor do Texto:</h3>
+    <button type="button" onclick="document.getElementById('text').style.color = 'black'">Preto</button>
+    <button type="button" onclick="document.getElementById('text').style.color = 'blue'">Azul</button>
+    <button type="button" onclick="document.getElementById('text').style.color = 'red'">Vermelho</button>
+    <br>
+    <h3>Cor de Fundo:</h3>
+    <button type="button" onclick="document.getElementById('box').style.background = 'white'">Branco</button>
+    <button type="button" onclick="document.getElementById('box').style.background = 'black'">Preto</button>
+    <button type="button" onclick="document.getElementById('box').style.background = 'yellow'">Amarelo</button>
+
+    <h1>Inserção</h1>
+    <button type="button" onclick="document.getElementById('caixa').appendChild(document.createTextNode('Text'))">Inserir</button>
+    <button type="button" onclick="document.getElementById('caixa').lastChild.remove()">Apagar </button>
+
+    <div class="elementos" id="caixa">
+    </div>
+
+    <h1>Caixa</h1>
+    <button type="button" onclick="caixaAzul()">Azul</button>
+    <button type="button" onclick="caixaVerde()">Verde</button>
+    <button type="button" onclick="caixaVermelho()">Vermelho</button>
+    <button type="button" onclick="caixaAmarelo()">Amarelo</button>
+
+
+    <div class="elementos" id="cores"></div>
+    
+    <script>
+        function caixaAzul(){
+            const novoElemento = document.createElement('div')
+            novoElemento.classList.add('minibox')
+            novoElemento.style.backgroundColor = 'blue'
+            document.getElementById('cores').appendChild(novoElemento)
+        }
+
+        function caixaVermelho(){
+            const novoElemento = document.createElement('div')
+            novoElemento.classList.add('minibox')
+            novoElemento.style.backgroundColor = 'red'
+            document.getElementById('cores').appendChild(novoElemento)
+        }
+
+        function caixaVerde(){
+            const novoElemento = document.createElement('div')
+            novoElemento.classList.add('minibox')
+            novoElemento.style.backgroundColor = 'green'
+            document.getElementById('cores').appendChild(novoElemento)
+        }
+
+        function caixaAmarelo(){
+            const novoElemento = document.createElement('div')
+            novoElemento.classList.add('minibox')
+            novoElemento.style.backgroundColor = 'yellow'
+            document.getElementById('cores').appendChild(novoElemento)
+        }
+    </script>
+</body>
+</html>

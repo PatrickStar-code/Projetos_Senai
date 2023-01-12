@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+body{
+    background-color: #c6d4e1;
+}
+
+
+
+
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-self: center;
+    justify-content: space-between;
+    background-color: #44749d;
+    padding: 15px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: black;  
+    align-items: center;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.logo{
+    margin-right: 50px;
+    width: 200px;
+}
+
+.list{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.cards{
+    
+    gap: 20px;
+    margin-top: 10px;
+    position: relative;
+
+}
+
+
+.kart{
+    width: 30px;
+    align-items: center;
+    align-self: center;
+}
+
+.usuario{
+    width: 40px;
+    align-items: center;
+    align-self: center;
+    margin-top: -2px;
+    margin-left: -5px;
+ 
+}
+
+.img_inicio{
+    width: max-content;
+    border-radius: 2%;  
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    width: 1000px;
+    margin-bottom: 25px;
+    
+}
+
+.text_img_inicio{
+    position: relative;
+    font-size: 42px;    
+    margin-top: 20px;
+
+}
+
+.box1{
+    /* position: relative; */
+    border-radius: 2%;  
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    height: 830px;
+}
+
+.tabela_preco{
+    /* position: relative; */
+    background-color: white;
+}
+
+.bloco{
+
+    background: white;
+    text-align: center;
+    width: 450px;
+    height: 805px;
+    padding:15px;
+    /* position: relative; */
+    border-radius: 2%;
+    border-radius: 2%;  
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.price{
+    margin: 25px 0;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.redirecionamento{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    border: black solid;
+    font-weight: 700;
+}
+
+.viagem{
+    font-size: 30px;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.viagem2{
+    font-size: 30px;
+    margin-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.viagem3{
+    font-size: 30px;
+    margin-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;  
+}
+
+.redirecionamento:hover{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    border: black solid;
+    font-weight: 700;
+    background: #d1cec7;
+}
+
+
+.inferior{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 10px;
+}
+
+.img_vantagens{
+    width: 1000px;
+    margin: 15px;
+    border: solid black;
+    border-radius: 5%;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.pesquisa{
+    display: flex;
+    flex: row;
+    justify-content: center;
+    align-content: stretch;
+    gap: 10px;
+    background-color: #6495c0;
+    height: 90px;
+    margin: 10px;
+    border-radius: 2%;
+    width: 1010px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
+}
+
+.submiter{
+    background: transparent;
+    border: none;
+    width: 30px;
+    position: relative;
+    top: 5px;
+
+}
+
+.pesquisa_text{
+    font-size: 30px;
+}
+
+.letra_label_viagem{
+    font-size: 15.5px;
+    font-weight: 530;
+    margin: 20x;
+    margin-left: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex{
+    display: flex;
+    padding: 5px;
+    justify-content:space-between;
+    gap: 20px;
+    flex-direction: row;
+    background-color: #6495c0;
+}
+
+.bandeiras{
+    width: 180px;
+}
+
+ .footer_text{
+     font-size: 25px;
+     font-family: Arial, Helvetica, sans-serif;
+
+ }
+
+
+ .posicao1{
+     display: block;
+     position: relative;
+     margin-top: 45px;
+     right: 200px;
+ }
+
+ .pix{
+     width: 60px;
+ }
+
+
+ .footer{
+     display: flex;
+     margin: 5px;
+     padding: 5px;
+ }
+
+ .sobre{
+     display: block;
+     margin: 5px;
+     padding: px;
+ }
+
+
+ footer{
+     background-color: #6495c0;
+    }
+
+.footer_text_pag{
+    padding: 5px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px;
+    margin-top: -5px;
+}

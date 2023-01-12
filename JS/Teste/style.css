@@ -1,0 +1,14 @@
+.maior{
+    width: 400px;
+    height: 400px;
+    background-color: darkgrey;
+}
+
+.box{
+    width: 186px;
+    height: 186px;
+    background-color: red;
+    display: inline-block;
+    margin-left: 8px;
+    margin-top: 8px;
+}

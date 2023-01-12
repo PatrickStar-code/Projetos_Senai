@@ -1,0 +1,83 @@
+*{
+    margin: 5px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+body{
+    overflow: auto
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+img{
+    width: 280px;
+}
+
+div.conteudo{
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    width: 980px;
+    border: solid #718EA4 5px;
+    box-shadow: 10px 5px 5px rgb(31, 30, 30);
+    align-content: center;
+}
+
+
+form{  
+    padding: 25px;
+}
+
+textarea{
+    margin-top: -25px;
+    width: 500px;
+    border: solid #718EA4 2px;
+}
+
+label{     
+    margin: 5px; 
+    align-items: center;
+    position: relative;
+   
+}
+
+.alinhamento{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   margin-top: 5px;
+   text-align: center;
+   align-content: center;
+   align-items: center;
+}
+
+input,select{
+    border: solid #718EA4 2px;
+}
+
+.submit{
+    height: 50px;
+    width: 100px;
+    font-size: 15px;
+  
+}
+
+.submit:hover{background-color: rgba(104, 100, 100, 0.568);}
+
+h1{
+    font-family: 'Space Mono', monospace;
+    font-size: 50px;
+}
+
+.satisfacao{
+    font-size: 20px;
+    font-family: 'Space Mono', monospace;
+
+}
+
+.comentario{
+    font-size: 20px;
+    font-family: 'Space Mono', monospace;
+    position: relative;
+}

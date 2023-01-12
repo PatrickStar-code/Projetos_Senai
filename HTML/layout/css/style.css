@@ -1,0 +1,45 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#container{
+    margin: 0px auto 0px auto;
+    width: 960px;
+    
+}
+
+body{
+    background-color: #E8E8E8;
+    color: #2D49A6;
+}
+header{
+    background-color: #2d49a6;
+    color:#FFF;
+    text-align: center;
+    padding: 15px;
+}
+nav{
+    background-color: #EEE;
+    height: 300px;
+    width: 100px;
+    float: left;
+    padding: 10px;
+}
+
+section{
+    width: 720px;
+    height: 300px;
+    float: left;
+    padding: 10px;
+    background-color: #00bf9b;
+}
+
+footer{
+    background-color: #2d49a6;
+    color: #fff;
+    height: 30px;
+    clear: both;
+    text-align: center;
+    padding: 5px;
+}

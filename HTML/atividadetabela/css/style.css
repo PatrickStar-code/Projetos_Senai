@@ -1,0 +1,6 @@
+.tabela{border-collapse: collapse;}
+.azul{background-color:#0C243F;color: white;}
+.azulclaro{background-color: #326093;color: white;}
+td,th{padding: 10px;}
+tr{width: 30px;}
+.cinza{background-color:#D8D8DC ;}

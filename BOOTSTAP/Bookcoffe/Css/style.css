@@ -1,0 +1,68 @@
+.mesas{
+    background-color: #FEB195;
+    margin: 20px;
+    padding: 5px;
+    width: 400px;
+    height: 120px;
+    position: relative;
+    top: 100px;
+    border-radius: 10px;
+}
+
+
+.n_mesa{
+    position: relative;
+    color: black;
+    font-size: 25px;
+    padding: 5px;
+    bottom: 25px;   
+}
+
+.status_text{
+    color: black;
+    font-size: 25px;
+    position: relative;
+    top : 45px;
+    left: 20px;
+}
+
+.status_mesa{
+    color: green;
+}
+
+.fundo_div{
+    position: relative;
+    top: 25px;
+    left: -10px;
+}
+
+.text_mesas{
+    font-size: 50px;
+}
+
+.status_open{
+    color: #e20028;
+}
+
+.retangulo{
+    width: 500px;
+}
+
+.dados_cliente{
+    font-size: 25px;
+    padding: 25px;
+}
+
+
+
+.botao_retornar{
+    margin: 2px;
+    position: relative;
+    left: 90px;
+    bottom: 42px;
+}
+
+.botao_salvar{
+    margin: 2px;
+    position: relative;
+}

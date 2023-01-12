@@ -1,0 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap');
+body{background-color: gray}
+.borda{border: solid aqua;border-collapse: collapse;background-color: white;}
+td,th{padding: 5px;font-family: 'Patrick Hand SC', cursive;text-align: center;width: 200px;height: 40px;}
+tr:hover{color: yellow;background-color: gray;}
+caption{margin-bottom: 10px;font-size: 25px;font-family: 'Patrick Hand SC', cursive}

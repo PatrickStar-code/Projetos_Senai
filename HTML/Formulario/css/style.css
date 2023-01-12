@@ -1,0 +1,14 @@
+body{background-color: rgb(0, 0, 0)}
+h1,h2,h3,h4,h5,h6{color: rgb(255, 255, 255);}
+.input{margin: 5px;;width: 150px;box-sizing: border-box;}
+label{color: white;}
+.submit{width: 120px;margin-top: 15px;}
+span{color: white;}
+#containerForm{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+
+
+.form{margin: 150px;border:solid gold;border-radius: 15px;height: max-content;width: 500px;}

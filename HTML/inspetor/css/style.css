@@ -1,0 +1,10 @@
+body{background-color: rgb(78, 68, 68);}
+h1{color: white;}
+p{
+    font-size: 50px;
+    color: beige;
+    text-align: justify;
+    font-size: 50px;
+    padding: 10px;
+    margin: 12px;
+}

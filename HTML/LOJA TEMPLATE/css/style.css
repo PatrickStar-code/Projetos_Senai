@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Tapestry&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-y: auto;
+    text-decoration: none;
+}
+header{background-color: black;color: white;}
+
+.cabecalho-menu{   
+    display:flex;
+    gap: 32px;}
+
+.cabecalho-menu-item{
+    font-weight: 400px;
+    font-size: 18px;
+    font-family: 'Tapestry', cursive;
+    color: white;
+    align-self: center;
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.subtitulo{
+    color: white;
+    font-size: 25px;
+    margin-top: 20px;
+}
+.conteudo{
+    display: flex;
+    font-size: 30px;
+    color: white;
+    flex-direction: row;
+    margin-top: 50px;
+    margin-right: 25px;
+
+}
+
+.conteudo-home
+{
+    display: flex;
+    margin-left: 50px;
+    margin-right: 25px;  
+}
+
+.img-conteudo-home:hover{
+    zoom: 103%;
+}
+
+.img-conteudo-home{
+    width: 700px;
+    border: solid 10px;
+    border-color: black;
+
+}
+
+
+body{background-color: rgb(61, 60, 60);}
+
+.conteudosecundario{
+    background-color: rgb(145, 141, 141);
+    width: 500px;
+    margin-top:20px;
+    margin-left: 30px;
+    text-align: center;  
+    margin-right: 20px;
+    height: 500px;
+}
+
+.imgproduto{
+    width: 290px;
+    padding: 9px;
+    height: 300px;
+}
+
+.produtos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.texthome{
+    text-align: center;
+    
+}
+
+.preco{
+    margin-top: 10px;
+    font-size: 30px;
+    color: rgb(139, 33, 33);
+}
+
+.prod{
+    font-size: 25px;
+    margin-top: 6pxs;
+}
+
+button{
+    width: 100px;
+    height: 50px;
+    background-color: beige;
+}
+
+.zoomprod{
+    margin:50px;
+    width: 600px;
+    background-color: black;
+}
+
+.textprod{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.descricao{
+    font-size: 20px;
+    color: white;
+    margin: 5px;
+}
+
+.carrinho_compra{
+    width: 50px;
+}
+
+.text_carrinho{
+    font-size: 25px;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.produtos_carrinho{
+    display: inline-block;
+    background-color: gray;
+    width: 800px;
+    flex-direction: row;
+}
+
+.iten_carrinho{
+    display: block;
+    width: 190px;
+    padding: 9px;
+    height: 300px;
+}
+
+.descricao_carrinho{
+    font-size: 20px;
+    color: black;
+    margin: 5px;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    margin-right: -50px;
+    
+}
+
+.valor_prod_total{
+    padding: 5px;
+    margin-left: 5px;
+    font-size: 30px;
+}
+
+.valor_prod{
+    margin-left:150px;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+    
+}
+
+.finalizar_compra{
+
+}

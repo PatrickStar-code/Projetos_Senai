@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Document</title>
+    <style>
+        div#caixa {
+            width: 500px;
+            height: 500px;
+            border-style: solid;
+            background-color: black;
+        }
+
+        div#box {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            background-image: url("/Img/pac_man.gif");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        div#fruta {
+            background-image: url(/Img/fruta.png);
+            background-size: cover;
+            background-position: center;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+        }
+
+        div#fantasma {
+            width: 100px;
+            height: 100px;
+            background-image: url(/Img/ghost.gif);
+            background-size: cover;
+            position: relative;
+        }
+
+        .fruta01 {
+            top: 480px;
+        }
+
+        .fruta02 {
+            left: 400px;
+        }
+
+        .fruta03 {
+            top: 300px;
+            left: 300px;
+        }
+
+        .fantasma01 {
+            left: 100px;
+            top: 100px;
+        }
+
+        .rotateDown {
+            background-image: url("/Img/pac_man.gif");
+            transform: rotate(90deg);
+        }
+
+        .rotateUp {
+            background-image: url("/Img/pac_man.gif");
+            transform: rotate(-90deg);
+        }
+
+        .rotateLeft {
+            background-image: url("/Img/pac_man.gif");
+            transform: rotate(180deg);
+        }
+
+        .rotateRight {
+            background-image: url("/Img/pac_man.gif");
+            transform: rotate(0deg);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Caixa de Jogo: 500x500px</h1>
+    <div id="caixa">
+        <div id="box"></div>
+        <div id="fruta" class="fruta01"></div>
+        <div id="fruta" class="fruta02"></div>
+        <div id="fruta" class="fruta03"></div>
+        <div id="fantasma" class="fantasma01">
+        </div>
+
+
+
+        <script>
+            var pos_top = 0, pos_left = 0;
+            var Frutas_x = [0, 4, 3]
+            var Frutas_y = [4, 1, 2]
+            var fantasma_x = [1]
+            var fantasma_y = [2]
+         
+
+
+            $(document).ready(function () {
+                $('body').keypress(function (e) {
+                    console.log(e.which);
+                    switch (e.which) {
+                        case 115:
+                            if (pos_top < 4) {
+                                $("#box").animate({ top: "+=100px" });
+                                $("#box").removeClass();
+                                $("#box").addClass('rotateDown');
+                                pos_top++;
+                            }
+                            console.log(pos_top, pos_left);
+                            break;
+
+                        case 119:
+                            if (pos_top > 0) {
+                                $("#box").animate({ top: "-=100px" });
+                                $("#box").removeClass();
+                                $("#box").addClass('rotateUp');
+                                pos_top--;
+                            }
+                            console.log(pos_top, pos_left);
+                            break;
+                        case 97:
+                            if (pos_left > 0) {
+                                $("#box").animate({ left: "-=100px" });
+                                $("#box").removeClass();
+                                $("#box").addClass('rotateLeft');
+                                pos_left--;
+                            }
+                            console.log(pos_top, pos_left);
+                            break;
+                        case 100:
+                            if (pos_left < 4) {
+                                $("#box").animate({ left: "+=100px" });
+                                $("#box").removeClass();
+                                $("#box").addClass('rotateRight');
+                                pos_left++;
+                            }
+                            console.log(pos_top, pos_left);
+                            break;
+                        default:
+                            break;
+                    }
+
+                    if ((pos_top == Frutas_y[0]) && (pos_left == Frutas_x[0])) {
+                        $(".fruta01").remove()
+                    }
+                    if ((pos_top == Frutas_y[1]) && (pos_left == Frutas_x[1])) {
+                        $(".fruta02 ").remove()
+
+                    }
+                    if ((pos_top == Frutas_y[2]) && (pos_left == Frutas_x[2])) {
+                        $(".fruta03 ").remove()
+                    }
+
+                    if ((pos_top == fantasma_y[0]) && (pos_left == fantasma_x[0])) {
+                        location.reload()
+                    }
+
+                });
+
+            });
+        </script>
+</body>
+
+</html>

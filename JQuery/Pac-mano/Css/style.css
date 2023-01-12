@@ -1,0 +1,14 @@
+.fundo {
+    width: 500px;
+    height: 500px;
+    background-color: black;
+}
+
+.pacman {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-image: url(/Img/pac_man.gif);
+    background-size: cover;
+}
+
